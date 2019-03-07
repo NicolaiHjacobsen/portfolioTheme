@@ -31,6 +31,22 @@ body
     width: 6em;
 }
 
+.fas
+{
+    display: block;
+    color: #fff;
+    float: right;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-right: 35px;
+    cursor: pointer;
+}
+
+.fas:hover
+{
+    color: #00d844;
+}
+
 #navbar
 {
     grid-area: navbar;
@@ -44,7 +60,7 @@ body
     float: left;
     display: flex;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -53,11 +69,6 @@ body
     color: #fff;
     text-decoration: none;
     padding: 30px;
-}
-
-#navbar li:nth-child(4)
-{
-    float: right;
 }
 
 #navbar #logo
@@ -90,6 +101,36 @@ body
     text-decoration: none;
 }
 
+ul
+{
+    display: none;
+    list-style-type: none;
+}
+
+.active
+{
+    position: absolute;
+    display: block;
+    background: #000;
+    width: 50%;
+    left: 0;
+    top: 100px;
+    height: 100%;
+    animation: activeAnimation .3s forwards 0s linear;
+}
+
+
+
+.smallNavbar ul li a
+{
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+}
+
 #hjem
 {
     grid-area: hjem;
@@ -97,7 +138,6 @@ body
 
 #hjem .container
 {
-    position: relative;
     text-align: center;
     background-color: #6A5252;
     color: #ffffff;
@@ -162,48 +202,115 @@ footer
     background-color: #333;
 }
 
-@keyframes logoAnimation{
-    0%{
-        transform: translateX(-100%);
-        }
-    100%{
-        transform: rotate(xx) translateX(-0%);
-        }
+@keyframes logoAnimation
+{
+0%{
+    transform: translateX(-100%);
+    }
+100%{
+    transform: rotate(xx) translateX(-0%);
+    }
 }
 
-@keyframes hjemAnimation{
-    0%{
-        transform: rotate(0) translateX(-150%);
-        }
-    100%{
-        transform: rotate(0) translateX(-0%);
-        }
+
+@keyframes activeAnimation
+{
+0%{
+    transform: translateX(-100%);
+    }
+100%{
+    transform: rotate(xx) translateX(-0%);
+    }
 }
 
-@keyframes omAnimation{
-    0%{
-        transform: rotate(0) translateX(-300%);
-        }
-    100%{
-        transform: rotate(0) translateX(-0%);
-        }
+
+
+
+@media screen and (min-width: 768px)
+{
+
+    .fas
+    {
+        display: none;
+    }
+
+    ul
+    {
+        display: flex;
+    }
+
+
+
+
+    #navbar
+    {
+        grid-area: navbar;
+        overflow: hidden;
+        background: #000;
+        opacity: 0.7;
+    }
+
+    #navbar li 
+    {
+        float: left;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    #navbar li a
+    {
+        color: #fff;
+        text-decoration: none;
+        padding: 30px;
+    }
+
+    #navbar li:nth-child(4)
+    {
+        float: right;    
+    }
+
+    @keyframes hjemAnimation{
+        0%{
+            transform: rotate(0) translateX(-150%);
+            }
+        100%{
+            transform: rotate(0) translateX(-0%);
+            }
+    }
+    
+    @keyframes omAnimation{
+        0%{
+            transform: rotate(0) translateX(-300%);
+            }
+        100%{
+            transform: rotate(0) translateX(-0%);
+            }
+    }
+    
+    @keyframes portfolioAnimation{
+        0%{
+            transform: rotate(0) translateX(-250%);
+            }
+        100%{
+            transform: rotate(0) translateX(-0%);
+            }
+    }
+    
+    @keyframes kontaktAnimation{
+        0%{
+            transform: rotate(0) translateX(-700%);
+            }
+        100%{
+            transform: rotate(0) translateX(0%);
+            }
+    }
+
 }
 
-@keyframes portfolioAnimation{
-    0%{
-        transform: rotate(0) translateX(-250%);
-        }
-    100%{
-        transform: rotate(0) translateX(-0%);
-        }
-}
+@media screen and (min-width: 1024px)
+{
 
-@keyframes kontaktAnimation{
-    0%{
-        transform: rotate(0) translateX(-700%);
-        }
-    100%{
-        transform: rotate(0) translateX(0%);
-        }
+
 }
 
