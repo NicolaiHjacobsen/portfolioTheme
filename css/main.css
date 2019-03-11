@@ -46,7 +46,7 @@ body
     grid-area: navbar;
     overflow: hidden;
     background: #000;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 #navbar li 
@@ -63,6 +63,7 @@ body
     color: #fff;
     text-decoration: none;
     padding: 30px;
+    padding-left: 110px;;
 }
 
 #navbar #logo
@@ -106,35 +107,16 @@ ul
     position: absolute;
     display: block;
     background: #000;
-    width: 50%;
+    width: 100%;
     left: 0;
     top: 100px;
-    height: 150%;
-    animation: activeAnimation .3s forwards 0s linear;
-}
-
-.sticky
-{
-    position: fixed;
-    top: 0%;
-    width: 100%;
-}
-
-
-.smallNavbar ul li a
-{
-    display: block;
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: none;
-    color: #fff;
-    padding: 20px;
+    height: 51%;
+    animation: activeAnimation .5s forwards 0s linear;
 }
 
 #hjem
 {
     grid-area: hjem;
-    padding-top: 100px; 
 }
 
 #hjem .container
@@ -253,13 +235,18 @@ footer
 }
 
 
-@keyframes activeAnimation
-{
+@keyframes activeAnimation{
 0%{
-    transform: translateX(-100%);
+    transform: rotate(0) translateY(-100%);
+    opacity: 0;
+    }
+5%{
+    transform: rotate(0) translateY(-99%);
+    opacity: 1;
     }
 100%{
-    transform: rotate(xx) translateX(-0%);
+    transform: rotate(0) translateY(0);
+    opacity: 1;
     }
 }
 
