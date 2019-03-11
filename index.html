@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel= "icon" type="image" href="img/Logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -35,7 +36,7 @@
                     <br>Denne side indeholder information om mig!
                     <br>
                 </p>
-                <button id="cta"><a href="https://github.com/NicolaiHjacobsen/portfolioTheme">GITHUB</a></button>
+                <button id="cta"><a href="https://github.com/NicolaiHjacobsen" target="_blank">GITHUB</a></button>
             </div>
         </div>
     </div>
@@ -58,18 +59,35 @@
     <!-- Denne del står for "portfolio" delen af siden -->
 
     <div id="portfolio">
-        <p>portfolio</p>
+        <div class="PF-content-container">
+                <h3>PORTFOLIO</h3>
+            <div class="PF-content-display">
+                <img src="img/welcome.jpg" alt="" class="mySliders">
+                <img src="" alt="" class="mySliders">
+                <img src="" alt="" class="mySliders">
+            </div>
+        </div>
     </div>
 
     <!-- Denne del står for "Kontakt" delen af siden -->
 
-    <div id="Kontakt">
+    <div id="kontakt">
         <footer>
-            <p>hi</p>
+            <h3>KONTAKT</h3>
+            <hr>
+            <p id="tlf">tlf: 42378104</p>
+            <p id="E-mail">NicoaiHJacobsen91@gmail.com</p>
+            <a href="DownloadLinks/Nicolai Jacobsen Nyt CV.pdf" download="">CV</a>
+            <a href="DownloadLinks/EksamenspapirAns.pdf" download="">Skole-papir</a>
         </footer>
     </div>
 
+    <!-- Denne knap lader dig komme tilbage til toppen af siden -->
+
+    <button onclick="topFunction()" id="backToTop" title="Go to top">Top</button>
+
 <script src="js/navActive.js"></script>
+<script src="js/ScrollBtn.js"></script>
 
 </body>
 </html>
