@@ -5,6 +5,7 @@
     <link rel= "icon" type="image" href="img/Logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -50,10 +51,7 @@
             sammen med min kæreste har jeg en datter på 3 år, og vi har en søn på vej til sommer. <br><br>
             Når jeg ikke bruger min tid sammen med min familie <br> kan du finde
             mig i Fitness World, hvor jeg træner hver morgen, <br> 6 gange om ugen. <br><br>
-            
-            
         </p>
-        
     </div>
 
     <!-- Denne del står for "portfolio" delen af siden -->
@@ -62,11 +60,61 @@
         <div class="PF-content-container">
                 <h3>PORTFOLIO</h3>
             <div class="PF-content-display">
-                <img src="img/welcome.jpg" alt="" class="mySliders">
-                <img src="" alt="" class="mySliders">
-                <img src="" alt="" class="mySliders">
+                <div class="mySlides">
+                    <img src="img/welcome.jpg">
+                    <div class="PFslide">
+                        <button onclick="document.getElementById('id01').style.display='block'" class="modal-btn">Klik her</button>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <img src="img/Logo.png">
+                    <div class="PFslide">
+                        <button onclick="document.getElementById('id02').style.display='block'" class="modal-btn">Klik her</button>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <img src="img/ProfilePic.png">
+                    <div class="PFslide">
+                        <button onclick="document.getElementById('id03').style.display='block'" class="modal-btn">Klik her</button>
+                    </div>
+                </div>
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
             </div>
-        </div>
+            <!-- This contain the modal for the first img -->
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content">
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close-modal">&times;</span>
+                        <h3>Portfolio website</h3>
+                        <p>check this out</p>
+                        <br>
+                        <div class="modal-img">
+                            <img src="img/ProfilePic.png">
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <!-- This contain the modal for the second img -->
+            <div id="id02" class="w3-modal">
+                <div class="w3-modal-content">
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('id02').style.display='none'" class="close-modal">&times;</span>
+                        <p>lol2</p>
+                    </div>
+                </div>
+            </div>
+            <!-- This contain the modal for the third img -->
+            <div id="id03" class="w3-modal">
+                <div class="w3-modal-content">
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('id03').style.display='none'" class="close-modal">&times;</span>
+                        <p>lol3</p>
+                    </div>
+                </div>
+            </div>
+        </div>     
     </div>
 
     <!-- Denne del står for "Kontakt" delen af siden -->
@@ -88,6 +136,7 @@
 
 <script src="js/navActive.js"></script>
 <script src="js/ScrollBtn.js"></script>
+<script src="js/imgSlider.js"></script>
 
 </body>
 </html>
