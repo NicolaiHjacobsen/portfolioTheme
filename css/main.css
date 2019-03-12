@@ -19,6 +19,7 @@ body
     "kontakt kontakt kontakt"
 }
 
+
 #brand
 {
     grid-area: brand;
@@ -71,11 +72,6 @@ body
     animation: logoAnimation .7s forwards 0s linear;
 }
 
-#navbar .hjem
-{
-    animation: hjemAnimation .7s forwards 0s linear;
-}
-
 #navbar .om
 {
     animation: omAnimation .7s forwards 0s linear;
@@ -110,9 +106,8 @@ ul
     width: 100%;
     left: 0;
     top: 90px;
-    height: 58%;
+    height: 52%;
     animation: activeAnimation .6s forwards 0s linear;
-    
 }
 
 #hjem
@@ -133,6 +128,7 @@ ul
     text-anchor: middle;
     text-align: center;
     font-size: 50px;
+    font-weight: bold;
     padding: 20px;
     
 }
@@ -160,7 +156,7 @@ ul
     margin-top: 20px;
     font-size: 24px;
     font-weight: bold;
-    background-color: rgb(0, 81, 255);
+    background-color: #0051ff;
     cursor: pointer;
 }
 
@@ -190,6 +186,7 @@ ul
 #om h3
 {
     text-align: center;
+    font-weight: bold;
     font-size: 32px;
     padding-top: 10px;
 }
@@ -218,15 +215,16 @@ ul
 
 .w3-button
 {
-    margin-top: 280%;
+    margin-top: 468%;
     margin-left: 5%;
     margin-right: 5%;
 }
 
 .modal-btn
 {
-    background-color: #000;
+    background-color: #0051ff;
     border: none;
+    border-radius: 5px;
     color: #fff;
     padding: 5px 10px 5px 10px;;
     font-size: 16px;
@@ -243,6 +241,14 @@ ul
 {
     color: #000;
 }
+#id02 h3
+{
+    color: #000;
+}
+#id03 h3
+{
+    color: #000;
+}
 
 .PF-content-container
 {
@@ -256,6 +262,8 @@ ul
     text-align: center;
     padding: 20px;
     font-size: 28px;
+    font-weight: bold;
+    margin-top: -4%;
 }
 
 .PF-content-display
@@ -285,6 +293,7 @@ ul
 {
     float: right;
     font-size: 26px;
+    cursor: pointer;
 }
 
 footer
@@ -297,7 +306,7 @@ footer
 
 footer a
 {
-    color: rgb(15, 155, 248);
+    color: #0f9bf8;
     margin-left: 25%;
     margin-top: 20px;
 }
@@ -307,6 +316,7 @@ footer h3
     font-size: 28px;
     color: #fff;
     text-align: center;
+    font-weight: bold;
 }
 
 footer #tlf
@@ -358,6 +368,8 @@ footer ul li a
     background-color: #555;
   }
 
+
+
 @keyframes logoAnimation
 {
 0%{
@@ -381,6 +393,102 @@ footer ul li a
 100%{
     transform: rotate(0) translateY(0);
     opacity: 1;
+    }
+}
+
+@media screen and (min-width: 320px) and (min-height: 568px )
+{
+    .active
+    {
+        top: 90px;
+        height: 82%;
+    }
+
+    .w3-button
+    {
+        margin-top: 589%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (min-width: 360px) and (min-height: 640px )
+{
+    .active
+    {
+        top: 90px;
+        height: 73%;
+    }
+
+    .w3-button
+    {
+        margin-top: 459%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (min-width: 375px) and (min-height: 667px )
+{
+    .active
+    {
+        top: 90px;
+        height: 70%;
+    }
+
+    .w3-button
+    {
+        margin-top: 428%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (min-width: 375px) and (min-height: 812px )
+{
+    .active
+    {
+        top: 90px;
+        height: 57%;
+    }
+
+    .w3-button
+    {
+        margin-top: 408%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (min-width: 411px) and (min-height: 731px )
+{
+    .active
+    {
+        top: 90px;
+        height: 64%;
+    }
+
+    .w3-button
+    {
+        margin-top: 383%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (min-width: 411px) and (min-height: 823px )
+{
+    .active
+    {
+        top: 90px;
+        height: 57%;
+    }
+
+    .w3-button
+    {
+        margin-top: 372%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
 
@@ -424,6 +532,11 @@ footer ul li a
         padding: 30px;
     }
 
+    #hjem .container
+    {
+        padding-top: 1px;
+    }
+
     #hjem h1
     {
         text-anchor: middle;
@@ -444,39 +557,125 @@ footer ul li a
         font-size: 28px;
     }
 
-    @keyframes hjemAnimation{
-        0%{
-            transform: rotate(0) translateX(-150%);
+    #om img
+    {
+        height: 460px;
+    }
+
+    #om h3
+    {
+        font-size: 48px;
+    }
+
+    #om p
+    {
+        font-size: 32px;
+        margin: 30px;
+        margin-right: 10%;
+    }
+
+    .PF-content-container h3
+    {
+        font-size: 48px;
+    }
+
+    .PF-content-display
+    {
+        height: 350px;
+        width: 100%;
+    }
+
+    .PF-content-display img
+    {
+        height: 350px;
+        width: 100%;
+    }
+
+    .PFslide
+    {
+        margin-top: -8%;
+        margin-left: 43%;
+    }
+
+    .modal-btn
+    {
+
+        padding: 5px 10px 5px 10px;;
+        font-size: 22px;
+    }
+
+    
+    .w3-button
+    {
+        margin-top: 226%;
+    }
+
+
+    footer h3
+    {
+        font-size: 42px;
+    }
+
+    footer #tlf
+    {
+        font-size: 32px;
+        margin-left: 15%;
+    }
+
+    footer #E-mail
+    {
+        color: #fff;
+        font-size: 32px;
+        text-align: left;
+        margin-left: 15%;
+        padding-bottom: 10px;
+    }
+
+    footer hr
+    {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    footer a
+    {
+        font-size: 22px;
+    }
+
+    
+    @keyframes omAnimation
+    {
+            0%
+            {
+                transform: rotate(0) translateX(-300%);
             }
-        100%{
-            transform: rotate(0) translateX(-0%);
+            100%
+            {
+                transform: rotate(0) translateX(-0%);
             }
     }
     
-    @keyframes omAnimation{
-        0%{
-            transform: rotate(0) translateX(-300%);
+    @keyframes portfolioAnimation
+    {
+            0%
+            {
+                transform: rotate(0) translateX(-250%);
             }
-        100%{
-            transform: rotate(0) translateX(-0%);
-            }
-    }
-    
-    @keyframes portfolioAnimation{
-        0%{
-            transform: rotate(0) translateX(-250%);
-            }
-        100%{
-            transform: rotate(0) translateX(-0%);
+            100%
+            {
+                transform: rotate(0) translateX(-0%);
             }
     }
     
-    @keyframes kontaktAnimation{
-        0%{
-            transform: rotate(0) translateX(-700%);
+    @keyframes kontaktAnimation
+    {
+            0%
+            {
+                transform: rotate(0) translateX(-700%);
             }
-        100%{
-            transform: rotate(0) translateX(0%);
+            100%
+            {
+                transform: rotate(0) translateX(0%);
             }
     }
 
@@ -485,6 +684,22 @@ footer ul li a
 @media screen and (min-width: 1024px)
 {
 
+
+    #om img
+    {
+        margin-left: 27%;
+    }
+
+    .w3-button
+    {
+        margin-top: 139%;
+        font-size: 22px;
+    }
+
+    footer a
+    {
+        font-size: 28px;
+    }
 
 }
 
