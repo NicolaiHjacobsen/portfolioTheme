@@ -189,6 +189,18 @@ ul
     margin-bottom: -10%;
 }
 
+.left-btn
+{
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.right-btn
+{
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
 .slider-btn:hover
 {
     color: #00d844;
@@ -281,6 +293,7 @@ ul
     font-size: 28px;
     font-weight: bold;
     margin-top: -4%;
+    
 }
 
 .PF-content-display
@@ -291,8 +304,28 @@ ul
 
 .PF-content-display img
 {
+    border: #00d844;
+    border-style: solid;
     height: 250px;
     width: 100%;
+}
+
+.w3-container
+{
+    background-color: #dce0e9;
+}
+
+.w3-container h1
+{
+   font-weight: bold;
+   text-align: center;
+}
+
+.w3-container h4
+{
+   font-size: 22px;
+   font-weight: bold;
+   text-align: center;
 }
 
 .modal-img 
@@ -304,6 +337,65 @@ ul
 .modal-img img
 {
     width: 100%;
+}
+
+#modal-P
+{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.Modal-list p
+{
+    margin-top: -30%;
+    padding: 20px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+#html-P
+{
+    margin-left: -10%;
+}
+
+#js-P
+{
+    margin-left: 10%;
+}
+
+.Modal-list
+{
+    margin-left: 5%;
+}
+
+.Modal-list li
+{
+    float: left;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.fab
+{
+    font-size: 60px;
+    padding: 20px;
+}
+
+.fa-html5
+{
+    color: #FF4500;
+}
+
+.fa-css3
+{
+    color: 	#00ff00;
+}
+
+.fa-js-square
+{
+    color: #ffff00;
 }
 
 .close-modal
@@ -420,6 +512,26 @@ footer ul li a
         top: 90px;
         height: 82%;
     }
+
+    .fab
+    {
+        padding: 15px;
+    }
+
+    #html-P
+    {
+        margin-left: -15%;
+    }
+
+    #css-P
+    {
+        margin-left: -5%;
+    }
+
+    #js-P
+    {
+        margin-left: 5%;
+    }
 }
 
 @media screen and (min-width: 360px) and (min-height: 640px )
@@ -456,6 +568,11 @@ footer ul li a
     {
         top: 90px;
         height: 64%;
+    }
+
+    .Modal-list
+    {
+        margin-left: 10%;
     }
 }
 
@@ -582,12 +699,49 @@ footer ul li a
         font-size: 22px;
     }
 
-    
-    .w3-button
+    .w3-container h1
     {
-        margin-top: 226%;
+        font-weight: bold;
+        text-align: center;
+        font-size: 38px;
     }
 
+    .w3-container h4
+    {
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    #modal-P
+    {
+        font-size: 24px;
+    }
+
+    .Modal-list
+    {
+        margin-left: 20%;
+    }
+
+    .Modal-list p
+    {
+        margin-top: -30%;
+        padding: 20px;
+        font-weight: bold;
+        padding-left: 30px;
+    }
+
+    #html-P
+    {
+        margin-left: -15%;
+    }
+
+    #js-P
+    {
+        margin-left: 5%;
+    }
 
 
     footer h3
@@ -674,9 +828,44 @@ footer ul li a
         margin-left: 27%;
     }
 
-    .w3-button
+
+    .Modal-list
     {
-        margin-top: 139%;
+        margin-left: 13%;
+    }
+
+    .Modal-list p
+    {
+        margin-top: -30%;
+        padding: 20px;
+        font-weight: bold;
+        padding-left: 30px;
+    }
+
+    .fab
+    {
+        font-size: 90px;
+        padding: 70px;
+    }
+
+    #html-P
+    {
+        margin-top: -40%;
+        margin-left: 21%;
+        font-size: 22px;
+    }
+
+    #css-P
+    {
+        font-size: 22px;
+        margin-left: 25%;
+        margin-top: -37%; 
+    }
+
+    #js-P
+    {
+        margin-left: 30%;
+        margin-top: -37%;
         font-size: 22px;
     }
 

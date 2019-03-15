@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <title>NHJ</title>
     <link rel= "icon" type="image" href="img/Logo.png">
+    <meta charset="UTF-8">
+    <meta name="author" content="Nicolai H Jacobsen">
+    <meta name="keywords" content="portfolio Nicolai Jacobsen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <title>NHJ</title>
 </head>
 <body>
 
@@ -67,7 +69,7 @@
             <button class="right-btn slider-btn" onclick="plusDivs(1)">&#10095;</button>
             <div class="PF-content-display">
                 <div class="mySlides">
-                    <img src="img/welcome.jpg">
+                    <img src="img/portfolioSide.PNG">
                     <div class="PFslide">
                         <button onclick="document.getElementById('id01').style.display='block'" class="modal-btn">Klik her</button>
                     </div>
@@ -90,11 +92,18 @@
                 <div class="w3-modal-content">
                     <div class="w3-container">
                         <span onclick="document.getElementById('id01').style.display='none'" class="close-modal">&times;</span>
-                        <h3>Portfolio website</h3>
-                        <p>check this out</p>
+                        <h1>Portfolio website</h1>
+                        <h4>Her kan du se hvordan min side er lavet!</h4>
                         <br>
                         <div class="modal-img">
-                            <img src="img/ProfilePic.png">
+                            <img src="img/portfolioSide.PNG">
+                        </div>
+                        <br>
+                        <p id="modal-P">Denne side er lavet med</p>
+                        <div class="Modal-list">
+                            <li><i class="fab fa-html5"></i><p id="html-P">HTML</p></li>
+                            <li><i class="fab fa-css3"></i><p id="css-P">CSS</p></li>
+                            <li><i class="fab fa-js-square"></i><p id="js-P">JS</p></li>
                         </div>
                         <br>
                     </div>
